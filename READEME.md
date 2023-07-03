@@ -11,3 +11,9 @@ yarn
 ```
 yarn dev
 ```
+
+##### For testing just run
+
+```
+yarn dev
+```
