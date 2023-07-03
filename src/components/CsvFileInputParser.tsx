@@ -1,7 +1,10 @@
 import { useRef } from "react";
 import * as Papa from "papaparse";
-import { CsvFileInputParserProps, inputData, validateAndFilterDataArgs } from "../types";
-
+import {
+  CsvFileInputParserProps,
+  inputData,
+  validateAndFilterDataArgs,
+} from "../types";
 
 const validateAndFilterData = ({
   data,
@@ -37,6 +40,7 @@ function CsvFileInputParser({ onParse }: CsvFileInputParserProps) {
   return (
     <div>
       <input
+        role="file-selector"
         type="file"
         ref={fileInput}
         onChange={handleFileSelection}
@@ -47,4 +51,3 @@ function CsvFileInputParser({ onParse }: CsvFileInputParserProps) {
 }
 
 export default CsvFileInputParser;
-

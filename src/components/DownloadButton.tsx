@@ -15,7 +15,7 @@ const handleDownload = (data: string[][], filename: string) => {
 
 const DownloadButton = ({ outputFile }: { outputFile: OutputFileData }) => {
   return (
-    <button onClick={() => handleDownload(outputFile.data, outputFile.name)}>
+    <button role="download-button" onClick={() => handleDownload(outputFile.data, outputFile.name)}>
       Download {outputFile.name}
     </button>
   );
